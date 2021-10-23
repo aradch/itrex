@@ -1,0 +1,53 @@
+.header-restore-password {
+  width: 368px;
+  margin: 264px 96px 0 96px;
+  height: 32px;
+  line-height: 31.4px;
+  letter-spacing: 0.4px;
+  color: #202225;
+}
+
+.header-restore-password::before {
+  content: url(/pages/assets/images/angle-left-b.svg);
+  margin-right: 16px;
+  vertical-align: -4px;
+}
+
+.text-restore-password {
+  width: 368px;
+  margin: 32px 96px 0 96px;
+  font-size: 15px;
+  line-height: 19.5px;
+  color: #a1abc9;
+}
+
+.email-redirect {
+  color: #7297ff;
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+  .bg-image {
+    background-size: contain;
+  }
+
+  section {
+    margin-top: -103.9%;
+  }
+
+  .header-restore-password {
+    width: 83%;
+    font-size: 125%;
+    margin: 10% 0 0 10%;
+  }
+
+  .header-restore-password::before {
+    vertical-align: -6px;
+  }
+
+  .text-restore-password {
+    width: 83%;
+    margin: 8% 0 0 10%;
+    letter-spacing: 0.2px;
+    font-size: 92%;
+  }
+}

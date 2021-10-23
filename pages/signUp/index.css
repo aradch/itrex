@@ -1,25 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Poppins";
-}
-
-main {
-  background: url(assets//images/bg.png) no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-section {
-  width: 560px;
-  background-color: #f9faff;
-}
-
-.form-sign-up__header {
+.header-form {
   width: 368px;
   height: 32px;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 31.4px;
   letter-spacing: 0.6px;
   margin: 168px 96px 0 96px;
@@ -53,21 +36,24 @@ section {
 }
 
 .form-sign-up__input_image_name {
-  background: url(assets/images/name.svg) no-repeat bottom 17px left 25px
+  background: url(/pages/assets/images/name.svg) no-repeat bottom 17px left 25px
     #ffffff;
 }
 .form-sign-up__input_image_email {
-  background: url(assets/images/email.svg) no-repeat bottom 15px left 23.4px
-    #ffffff;
+  background: url(/pages/assets/images/email.svg) no-repeat bottom 15px left
+    23.4px #ffffff;
 }
 .form-sign-up__input_image_password {
-  background: url(assets/images/eye-slash.svg) no-repeat bottom 16px right 24px,
-    url(assets/images/password.svg) no-repeat bottom 17px left 27px #ffffff;
+  background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 16px
+      right 24px,
+    url(/pages/assets/images/password.svg) no-repeat bottom 17px left 27px
+      #ffffff;
 }
 .form-sign-up__input_image_confirm-password {
-  background: url(assets/images/eye-slash.svg) no-repeat bottom 16px right 24px,
-    url(assets/images/confirm-password.svg) no-repeat bottom 21px left 28px
-      #ffffff;
+  background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 16px
+      right 24px,
+    url(/pages/assets/images/confirm-password.svg) no-repeat bottom 21px left
+      28px #ffffff;
 }
 
 .form-sign-up__button {
@@ -79,8 +65,8 @@ section {
   letter-spacing: 0.3px;
   line-height: 24px;
   font-weight: 600;
-  background: url(assets/images/angle-right-b.svg) no-repeat bottom 16px right
-    24px #7297ff;
+  background: url(/pages/assets/images/angle-right-b.svg) no-repeat bottom 16px
+    right 24px #7297ff;
 }
 
 .sign-in {
@@ -98,25 +84,20 @@ section {
 }
 
 @media (min-width: 0) and (max-width: 599px) {
-  main {
-    background-size: contain;
-  }
-
   section {
-    border-radius: 24px 24px 0px 0px;
-    margin-top: 22.4%;
+    margin-top: -49%;
   }
 
-  .form-sign-up__header {
+  .header-form {
     width: 80%;
     font-size: 20px;
-    margin: 10.5% 10% 0 9.6%;
+    margin: 10.5% 10% 0 10%;
   }
 
   .form-sign-up__input {
     width: 80%;
     height: 40px;
-    margin: 7.35% 10% 0 9.6%;
+    margin: 7.35% 10% 0 10%;
     padding: 16px 47px;
   }
 
@@ -126,36 +107,39 @@ section {
   }
 
   .form-sign-up__input_image_name {
-    background: url(assets/images/name.svg) no-repeat bottom 9px left 17px
-      #ffffff;
+    background: url(/pages/assets/images/name.svg) no-repeat bottom 9px left
+      17px #ffffff;
   }
   .form-sign-up__input_image_email {
-    background: url(assets/images/email.svg) no-repeat bottom 7px left 15.4px
-      #ffffff;
+    background: url(/pages/assets/images/email.svg) no-repeat bottom 7px left
+      15.4px #ffffff;
   }
   .form-sign-up__input_image_password {
-    background: url(assets/images/eye-slash.svg) no-repeat bottom 8px right 16px,
-      url(assets/images/password.svg) no-repeat bottom 9px left 19px #ffffff;
+    background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 8px
+        right 16px,
+      url(/pages/assets/images/password.svg) no-repeat bottom 9px left 19px
+        #ffffff;
   }
   .form-sign-up__input_image_confirm-password {
-    background: url(assets/images/eye-slash.svg) no-repeat bottom 8px right 16px,
-      url(assets/images/confirm-password.svg) no-repeat bottom 13px left 19px
-        #ffffff;
+    background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 8px
+        right 16px,
+      url(/pages/assets/images/confirm-password.svg) no-repeat bottom 13px left
+        19px #ffffff;
   }
 
   .form-sign-up__button {
     width: 122px;
     height: 48px;
     padding: 14.5px 48px 14.5px 16px;
-    margin: 10% 0 0 9.6%;
+    margin: 10.4% 0 0 10%;
     line-height: 19.5px;
-    background: url(assets/images/angle-right-b.svg) no-repeat bottom 12px right
-      16px #7297ff;
+    background: url(/pages/assets/images/angle-right-b.svg) no-repeat bottom
+      12px right 16px #7297ff;
   }
 
   .sign-in {
     flex-direction: column;
-    margin: 22.8% 0 14% 9.6%;
+    margin: 22.8% 0 0 10%;
   }
 
   .sign-in__redirect {

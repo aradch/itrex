@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../commonStyles/common.css">
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <title>Sign In</title>
@@ -12,11 +13,22 @@
 
 <body>
   <main>
+    <figure class="bg-image"></figure>
     <section>
+      <header class="header-form">Sign In</header>
+
       <form class="form-sign-in">
-        <h1 class="form-sign-in__header">Sign In</h1>
-        <input class="form-sign-in__input form-sign-in__input_image_email" type="text" placeholder="Email">
-        <input class="form-sign-in__input form-sign-in__input_image_password" type="text" placeholder="Password">
+        <div class="form-sign-in__block-email">
+          <label for="email">Email</label>
+          <input class="form-sign-in__input form-sign-in__input_image_email" id="email" type="text" placeholder="Email">
+        </div>
+
+        <div class="form-sign-in__block-password">
+          <label for="password">Password</label>
+          <input class="form-sign-in__input form-sign-in__input_image_password" id="password" type="text"
+            placeholder="Password">
+        </div>
+
         <button class="form-sign-in__button" type="submit">
           Sign In
         </button>
@@ -24,10 +36,11 @@
       <div class="forgot-password">
         <a class="forgot-password__redirect" href="#">Forgot Password?</a>
       </div>
-      <div class="sign-up">
+
+      <footer class="sign-up">
         <p class="sign-up__text">Don’t have an account?</p>
         <a class="sign-up__redirect" href="#">Sign up</a>
-      </div>
+      </footer>
     </section>
   </main>
 </body>

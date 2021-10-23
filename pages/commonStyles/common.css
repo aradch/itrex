@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+}
+
+.bg-image {
+  width: 100%;
+  background: url(/pages/assets/images/bg.png) no-repeat;
+  background-size: cover;
+}
+
+section {
+  width: 560px;
+  background-color: #f9faff;
+}
+
+label {
+  display: none;
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  .bg-image {
+    min-height: 26.3vmax;
+  }
+
+  section {
+    width: 100%;
+    border-radius: 24px 24px 0px 0px;
+  }
+}
