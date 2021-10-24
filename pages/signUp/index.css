@@ -16,6 +16,8 @@
   box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.16);
   padding: 16px 63px;
   color: #202225;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .form-sign-up__input,
@@ -36,24 +38,24 @@
 }
 
 .form-sign-up__input_image_name {
-  background: url(/pages/assets/images/name.svg) no-repeat bottom 17px left 25px
-    #ffffff;
+  background: url(/itrex/pages/assets/images/name.svg) no-repeat bottom 17px
+    left 25px #ffffff;
 }
 .form-sign-up__input_image_email {
-  background: url(/pages/assets/images/email.svg) no-repeat bottom 15px left
-    23.4px #ffffff;
+  background: url(/itrex/pages/assets/images/email.svg) no-repeat bottom 15px
+    left 23.4px #ffffff;
 }
 .form-sign-up__input_image_password {
-  background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 16px
-      right 24px,
-    url(/pages/assets/images/password.svg) no-repeat bottom 17px left 27px
+  background: url(/itrex/pages/assets/images/eye-slash.svg) no-repeat bottom
+      16px right 24px,
+    url(/itrex/pages/assets/images/password.svg) no-repeat bottom 17px left 27px
       #ffffff;
 }
 .form-sign-up__input_image_confirm-password {
-  background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 16px
-      right 24px,
-    url(/pages/assets/images/confirm-password.svg) no-repeat bottom 21px left
-      28px #ffffff;
+  background: url(/itrex/pages/assets/images/eye-slash.svg) no-repeat bottom
+      16px right 24px,
+    url(/itrex/pages/assets/images/confirm-password.svg) no-repeat bottom 21px
+      left 28px #ffffff;
 }
 
 .form-sign-up__button {
@@ -65,8 +67,8 @@
   letter-spacing: 0.3px;
   line-height: 24px;
   font-weight: 600;
-  background: url(/pages/assets/images/angle-right-b.svg) no-repeat bottom 16px
-    right 24px #7297ff;
+  background: url(/itrex/pages/assets/images/angle-right-b.svg) no-repeat bottom
+    16px right 24px #7297ff;
 }
 
 .sign-in {
@@ -107,24 +109,24 @@
   }
 
   .form-sign-up__input_image_name {
-    background: url(/pages/assets/images/name.svg) no-repeat bottom 9px left
-      17px #ffffff;
+    background: url(/itrex/pages/assets/images/name.svg) no-repeat bottom 9px
+      left 17px #ffffff;
   }
   .form-sign-up__input_image_email {
-    background: url(/pages/assets/images/email.svg) no-repeat bottom 7px left
-      15.4px #ffffff;
+    background: url(/itrex/pages/assets/images/email.svg) no-repeat bottom 7px
+      left 15.4px #ffffff;
   }
   .form-sign-up__input_image_password {
-    background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 8px
-        right 16px,
-      url(/pages/assets/images/password.svg) no-repeat bottom 9px left 19px
-        #ffffff;
+    background: url(/itrex/pages/assets/images/eye-slash.svg) no-repeat bottom
+        8px right 16px,
+      url(/itrex/pages/assets/images/password.svg) no-repeat bottom 9px left
+        19px #ffffff;
   }
   .form-sign-up__input_image_confirm-password {
-    background: url(/pages/assets/images/eye-slash.svg) no-repeat bottom 8px
-        right 16px,
-      url(/pages/assets/images/confirm-password.svg) no-repeat bottom 13px left
-        19px #ffffff;
+    background: url(/itrex/pages/assets/images/eye-slash.svg) no-repeat bottom
+        8px right 16px,
+      url(/itrex/pages/assets/images/confirm-password.svg) no-repeat bottom 13px
+        left 19px #ffffff;
   }
 
   .form-sign-up__button {
@@ -133,8 +135,8 @@
     padding: 14.5px 48px 14.5px 16px;
     margin: 10.4% 0 0 10%;
     line-height: 19.5px;
-    background: url(/pages/assets/images/angle-right-b.svg) no-repeat bottom
-      12px right 16px #7297ff;
+    background: url(/itrex/pages/assets/images/angle-right-b.svg) no-repeat
+      bottom 12px right 16px #7297ff;
   }
 
   .sign-in {

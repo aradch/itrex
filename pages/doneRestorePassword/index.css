@@ -8,7 +8,7 @@
 }
 
 .header-restore-password::before {
-  content: url(/pages/assets/images/angle-left-b.svg);
+  content: url(/itrex/pages/assets/images/angle-left-b.svg);
   margin-right: 16px;
   vertical-align: -4px;
 }

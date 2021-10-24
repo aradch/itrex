@@ -11,7 +11,7 @@ main {
 
 .bg-image {
   width: 100%;
-  background: url(/pages/assets/images/bg.png) no-repeat;
+  background: url(/itrex/pages/assets/images/bg.png) no-repeat;
   background-size: cover;
 }
 
