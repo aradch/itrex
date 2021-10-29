@@ -7,8 +7,8 @@
   color: #202225;
 }
 
-.header-restore-password::before {
-  content: url(/itrex/pages/assets/images/angle-left-b.svg);
+.header-restore-password a {
+  content: url(../../assets/images/angle-left-b.svg);
   margin-right: 16px;
   vertical-align: -4px;
 }
@@ -40,7 +40,7 @@
     margin: 10% 0 0 10%;
   }
 
-  .header-restore-password::before {
+  .header-restore-password a {
     vertical-align: -6px;
   }
 

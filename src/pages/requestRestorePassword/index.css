@@ -1,6 +1,7 @@
 .header {
   width: 368px;
-  margin: 264px 96px 0 96px;
+  /* margin: 264px 96px 0 96px; */
+  margin: 47% 96px 0 96px;
 }
 
 .header__restore-password {
@@ -10,8 +11,8 @@
   color: #202225;
 }
 
-.header__restore-password::before {
-  content: url(/itrex/pages/assets/images/angle-left-b.svg);
+.header__restore-password a {
+  content: url(../../assets/images/angle-left-b.svg);
   margin-right: 16px;
   vertical-align: -4px;
 }
@@ -23,7 +24,7 @@
   color: #a1abc9;
 }
 
-.form-restore-password__input {
+.form__input {
   width: 368px;
   margin: 40px 96px 0 96px;
   border: 1px solid #dce0ec;
@@ -34,29 +35,57 @@
   text-overflow: ellipsis;
 }
 
-.form-restore-password__input,
-.form-restore-password__button {
+.form__input,
+.form__button {
   height: 56px;
   border-radius: 8px;
   font-size: 17px;
   cursor: pointer;
 }
 
-.form-restore-password__input:focus {
+.form__input:focus {
   border-color: #7297ff;
   outline: none;
 }
 
-.form-restore-password__input::placeholder {
+.form__input::placeholder {
   color: #a1abc9;
 }
 
-.form-restore-password__input_image_email {
-  background: url(/itrex/pages/assets/images/email.svg) no-repeat bottom 15px
-    left 23.4px #ffffff;
+.form__input_image_email {
+  background: url(../../assets/images/email.svg) no-repeat bottom 15px left
+    23.4px #ffffff;
 }
 
-.form-restore-password__button {
+/* это для валидации */
+
+.form__validate {
+  position: relative;
+}
+
+.form__validate.error input {
+  border: 1px solid #ff2567;
+}
+
+.form__error-message {
+  position: absolute;
+  left: -9999999px;
+}
+.form__validate.error .form__error-message {
+  /* position: relative;
+  width: 368px;
+  left: 96px;
+  top: 8px; */
+  position: static;
+  padding: 8px 96px 0 96px;
+  color: #f6657f;
+  font-size: 13px;
+  letter-spacing: -0.24px;
+}
+
+/*  */
+
+.form__button {
   width: 214px;
   padding: 16px 56px 16px 24px;
   margin: 64px 0 0 96px;
@@ -65,8 +94,8 @@
   letter-spacing: 0.3px;
   line-height: 24px;
   font-weight: 600;
-  background: url(/itrex/pages/assets/images/angle-right-b.svg) no-repeat bottom
-    16px right 24px #7297ff;
+  background: url(../../assets/images/angle-right-b.svg) no-repeat bottom 16px
+    right 24px #7297ff;
 }
 
 @media (min-width: 0) and (max-width: 599px) {
@@ -87,7 +116,7 @@
     font-size: 125%;
   }
 
-  .header__restore-password::before {
+  .header__restore-password a {
     vertical-align: -5px;
   }
 
@@ -97,7 +126,7 @@
     font-size: 94%;
   }
 
-  .form-restore-password__input {
+  .form__input {
     width: 80%;
     height: 40px;
     font-size: 15px;
@@ -105,18 +134,30 @@
     padding: 16px 47px;
   }
 
-  .form-restore-password__input_image_email {
-    background: url(/itrex/pages/assets/images/email.svg) no-repeat bottom 7px
-      left 15.4px #ffffff;
+  .form__input_image_email {
+    background: url(../../assets/images/email.svg) no-repeat bottom 7px left
+      15.4px #ffffff;
   }
 
-  .form-restore-password__button {
+  /* это для валидации */
+
+  .form__validate.error .form__error-message {
+    /* width: 80%;
+    left: 10%;
+    top: 17px; */
+    padding: 5% 10% 0 10%;
+    line-height: 130%;
+  }
+
+  /*  */
+
+  .form__button {
     width: 198px;
     height: 48px;
     padding: 14.5px 48px 14.5px 16px;
     margin: 10% 0 0 10%;
     line-height: 19.5px;
-    background: url(/itrex/pages/assets/images/angle-right-b.svg) no-repeat
-      bottom 12px right 16px #7297ff;
+    background: url(../../assets/images/angle-right-b.svg) no-repeat bottom 12px
+      right 16px #7297ff;
   }
 }

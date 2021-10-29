@@ -11,7 +11,7 @@ main {
 
 .bg-image {
   width: 100%;
-  background: url(/itrex/pages/assets/images/bg.png) no-repeat;
+  background: url(../../assets/images/bg.png) no-repeat;
   background-size: cover;
 }
 
@@ -21,7 +21,8 @@ section {
 }
 
 label {
-  display: none;
+  position: absolute;
+  left: -99999999px;
 }
 
 @media (min-width: 0) and (max-width: 599px) {
