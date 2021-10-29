@@ -43,7 +43,7 @@ export function requestToResetPassword(email) {
   })
 
   if (user) {
-    render("/done-restore-password")
+    render("/itrex/done-restore-password")
   } else {
     throw new Error(`Email is not found`)
   }

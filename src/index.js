@@ -22,6 +22,7 @@ export const render = (path) => {
   // finding the desired object with data in the array
   const page = routes.find((page) => page.path === path);
 
+
   // displayed this page
   document.querySelector("#app").innerHTML = page.view.getHtml() || `<h1>404</h1>`;
   document.title = page.title;
