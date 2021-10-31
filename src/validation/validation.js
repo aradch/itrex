@@ -1,4 +1,4 @@
-import { sendFormData } from '../sendFormData.js';
+import { sendFormData } from "../sendFormData.js"
 
 export const validation = (path) => {
   // get form and items of form
@@ -16,7 +16,7 @@ export const validation = (path) => {
 
       checkInputs()
 
-      let itemsForm = e.target.querySelectorAll('.form__validate')
+      let itemsForm = e.target.querySelectorAll(".form__validate")
       itemsForm = Array.prototype.slice.call(itemsForm)
       itemsForm = itemsForm.every((elem) => !elem.classList.contains("error"))
 
@@ -34,10 +34,10 @@ export const validation = (path) => {
     const passwordValue = (password && password.value.trim())
     const confirmPasswordValue = (confirmPassword && confirmPassword.value.trim())
 
-    const regExpFirstName = /^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$/;
+    const regExpFirstName = /^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$/
     const regExpLastName = /^\s*[A-ZА-Я][a-zа-я]+('[a-zа-я]+|-[A-ZА-Я][a-zа-я]+)?\s*$/u
-    const regExpEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const regExpPassword = /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/;
+    const regExpEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const regExpPassword = /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/
 
 
     // checked inputs for value

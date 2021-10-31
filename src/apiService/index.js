@@ -1,4 +1,4 @@
-import { render } from './../index.js';
+import { render } from "./../index.js"
 
 const users = []
 
@@ -31,8 +31,9 @@ export function signIn(email, password) {
   })
 
   if (!user) {
-    throw new Error(`Email or password is not correct`)
+    throw new Error("Email or password is not correct")
   }
+
 
   return user
 }
@@ -45,8 +46,9 @@ export function requestToResetPassword(email) {
   if (user) {
     render("/itrex/done-restore-password")
   } else {
-    throw new Error(`Email is not found`)
+    throw new Error("Email is not found")
   }
+
 
   return user
 }

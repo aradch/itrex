@@ -72,10 +72,6 @@
   left: -9999999px;
 }
 .form__validate.error .form__error-message {
-  /* position: relative;
-  width: 368px;
-  left: 96px;
-  top: 8px; */
   position: static;
   padding: 8px 96px 0 96px;
   color: #f6657f;
@@ -126,6 +122,11 @@
     font-size: 94%;
   }
 
+  .form {
+    height: 185px;
+    padding-bottom: 42px;
+  }
+
   .form__input {
     width: 80%;
     height: 40px;
@@ -142,9 +143,6 @@
   /* это для валидации */
 
   .form__validate.error .form__error-message {
-    /* width: 80%;
-    left: 10%;
-    top: 17px; */
     padding: 5% 10% 0 10%;
     line-height: 130%;
   }

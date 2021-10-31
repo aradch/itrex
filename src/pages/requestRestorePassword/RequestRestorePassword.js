@@ -21,6 +21,6 @@ export default class RequestRestorePassword {
             </form>
             </section>
         </main>
-        `;
+        `
     }
 }

@@ -1,4 +1,4 @@
-import { signUp, signIn, requestToResetPassword } from './apiService/index.js';
+import { signUp, signIn, requestToResetPassword } from "./apiService/index.js"
 
 export const sendFormData = (e, path, form) => {
   const elem = e.target

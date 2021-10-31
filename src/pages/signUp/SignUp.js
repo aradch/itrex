@@ -30,10 +30,10 @@ export default class SignUp {
         
                 <div class="form__block-password form__validate">
                     <label for="password">Password</label>
-                    <input class="form__input form__input_image_password" id="password" type="text"
+                    <input class="form__input form__input_image_password" id="password" type="password"
                     placeholder="Password">
                     <div class="form__block_show-hide-password">
-                        <div class="form__block-password_show-password"></div>
+                        <div class="form__block-password_hide-password"></div>
                     </div>                    
                     <p class="form__error-message">Error message</p>
                 </div>
@@ -41,9 +41,9 @@ export default class SignUp {
                 <div class="form__block-confirm-password form__validate">
                     <label for="confirm-password">Confirm Password</label>
                     <input class="form__input form__input_image_confirm-password" id="confirm-password"
-                    type="text" placeholder="Confirm Password">
+                    type="password" placeholder="Confirm Password">
                     <div class="form__block_show-hide-password">
-                        <div class="form__block-confirm-password_show-password"></div>
+                        <div class="form__block-confirm-password_hide-password"></div>
                     </div>                    
                     <p class="form__error-message">Error message</p>
                 </div>
@@ -57,6 +57,6 @@ export default class SignUp {
             </footer>
             </section>
         </main>
-        `;
+        `
     }
 }

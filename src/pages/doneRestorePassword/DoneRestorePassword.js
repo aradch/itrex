@@ -10,6 +10,6 @@ export default class DoneRestorePassword {
                 href="#">example@exam.com</a>. Check your inbox, and click the reset link provided.</p>
             </section>
         </main>
-        `;
+        `
     }
 }
