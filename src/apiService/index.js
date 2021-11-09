@@ -1,5 +1,3 @@
-import { render } from "./../index.js"
-
 const users = []
 
 export function signUp(firstName, lastName, email, password) {
@@ -8,21 +6,22 @@ export function signUp(firstName, lastName, email, password) {
   })
 
   if (existedUser) {
-    throw new Error(`User with email ${email} is already exist`)
+    // throw new Error(`User with email ${email} is already exist`)
+    console.log(`User with email ${email} is already exist`)
+    return { ok: false }
+  } else {
+    const user = {
+      id: Date.now(),
+      firstName,
+      lastName,
+      email,
+      password,
+    }
+
+    users.push(user)
+
+    return { ok: true }
   }
-
-  const user = {
-    id: Date.now(),
-    firstName,
-    lastName,
-    email,
-    password,
-  }
-
-  users.push(user)
-
-  return user
-
 }
 
 export function signIn(email, password) {
@@ -31,11 +30,13 @@ export function signIn(email, password) {
   })
 
   if (!user) {
-    throw new Error("Email or password is not correct")
+    // throw new Error("Email or password is not correct")
+    console.log("Email or password is not correct")
+    return { ok: false }
+  } else {
+    return { ok: true }
   }
 
-
-  return user
 }
 
 export function requestToResetPassword(email) {
@@ -43,12 +44,11 @@ export function requestToResetPassword(email) {
     return userItem.email === email
   })
 
-  if (user) {
-    render("/itrex/done-restore-password")
+  if (!user) {
+    // throw new Error("Email is not found")
+    console.log("Email is not found")
+    return { ok: false }
   } else {
-    throw new Error("Email is not found")
+    return { ok: true }
   }
-
-
-  return user
 }
