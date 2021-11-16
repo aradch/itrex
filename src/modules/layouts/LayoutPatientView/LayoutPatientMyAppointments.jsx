@@ -82,7 +82,7 @@ const AppointmentsList = styled.div`
 `
 
 
-export const LayoutPatientView = ({ children, headerArticleAppointments, buttonText, imgPlus }) => {
+export const LayoutPatientMyAppointments = ({ children, headerArticleAppointments, buttonText, imgPlus }) => {
 
   return (
     <Main>

@@ -26,6 +26,7 @@ export const RequestRestorePassword = ({
       redirectUrl="/login/sign-in"
     >
       <FormInputBlock
+        labelText="Email"
         inputId="email"
         inputPlaceholder="Email"
         inputValue={emailValue}
@@ -37,6 +38,7 @@ export const RequestRestorePassword = ({
         errorIlluminationInput={errorIlluminationInput["email"]}
         showErrorMessage={errorMessage["email"]}
         textErrorMessage={defaultErrorMessage["email"]}
+        required={true}
       />
 
       <Button

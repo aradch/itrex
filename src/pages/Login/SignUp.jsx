@@ -57,6 +57,7 @@ export const SignUp = ({
       footerContent="Already have an account?"
     >
       <FormInputBlock
+        labelText="First Name"
         inputId="first-name"
         inputPlaceholder="First Name"
         inputValue={firstNameValue}
@@ -68,9 +69,11 @@ export const SignUp = ({
         errorIlluminationInput={errorIlluminationInput["first-name"]}
         showErrorMessage={errorMessage["first-name"]}
         textErrorMessage={defaultErrorMessage["first-name"]}
+        required={true}
       />
 
       <FormInputBlock
+        labelText="Last Name"
         inputId="last-name"
         inputPlaceholder="Last Name"
         inputValue={lastNameValue}
@@ -82,9 +85,11 @@ export const SignUp = ({
         errorIlluminationInput={errorIlluminationInput["last-name"]}
         showErrorMessage={errorMessage["last-name"]}
         textErrorMessage={defaultErrorMessage["last-name"]}
+        required={true}
       />
 
       <FormInputBlock
+        labelText="Email"
         inputId="email"
         inputPlaceholder="Email"
         inputValue={emailValue}
@@ -96,9 +101,11 @@ export const SignUp = ({
         errorIlluminationInput={errorIlluminationInput["email"]}
         showErrorMessage={errorMessage["email"]}
         textErrorMessage={defaultErrorMessage["email"]}
+        required={true}
       />
 
       <FormInputBlock
+        labelText="Password"
         inputId="password"
         inputType={typeInputPassword}
         inputPlaceholder="Password"
@@ -117,9 +124,11 @@ export const SignUp = ({
             imgHidePassword
         }
         onTypeInputChanged={onTypeInputPasswordChanged}
+        required={true}
       />
 
       <FormInputBlock
+        labelText="Confirm Password"
         inputId="confirm-password"
         inputType={typeInputConfirmPassword}
         inputPlaceholder="Confirm Password"
@@ -138,6 +147,7 @@ export const SignUp = ({
             imgHidePassword
         }
         onTypeInputChanged={onTypeInputConfirmPasswordChanged}
+        required={true}
       />
 
       <Button bgImageUrl={imgButtonArrowRight}>Sign Up</Button>

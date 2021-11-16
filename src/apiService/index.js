@@ -1,4 +1,5 @@
 const users = []
+const doctorAppointment = []
 
 export function signUp(firstName, lastName, email, password) {
   const existedUser = users.find((userItem) => {
@@ -52,3 +53,23 @@ export function requestToResetPassword(email) {
     return { ok: true }
   }
 }
+
+export function createAppointment(occupation, doctorName, reasonVisit, note, date, time) {
+  const appointment = {
+    id: Date.now(),
+    occupation,
+    doctorName,
+    reasonVisit,
+    note,
+    date,
+    time,
+  }
+
+  doctorAppointment.push(appointment)
+
+  console.log(doctorAppointment)
+  console.log(appointment)
+
+  return appointment
+}
+

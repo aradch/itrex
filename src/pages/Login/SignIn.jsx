@@ -47,6 +47,7 @@ export const SignIn = ({
     >
 
       <FormInputBlock
+        labelText="Email"
         inputId="email"
         inputPlaceholder="Email"
         inputValue={emailValue}
@@ -58,9 +59,11 @@ export const SignIn = ({
         errorIlluminationInput={errorIlluminationInput["email"]}
         showErrorMessage={errorMessage["email"]}
         textErrorMessage={defaultErrorMessage["email"]}
+        required={true}
       />
 
       <FormInputBlock
+        labelText="Password"
         inputId="password"
         inputType={typeInputPassword}
         inputPlaceholder="Password"
@@ -79,6 +82,7 @@ export const SignIn = ({
             imgHidePassword
         }
         onTypeInputChanged={onTypeInputPasswordChanged}
+        required={true}
       />
 
       <Button bgImageUrl={imgButtonArrowRight}>Sign In</Button>
