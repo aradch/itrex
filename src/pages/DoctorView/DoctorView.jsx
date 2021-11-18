@@ -1,17 +1,18 @@
-import { Redirect, Route, Switch } from "react-router"
-import { MyPatients } from './MyPatients'
-import { EmptyPatients } from './EmptyPatients'
+import { DoctorViewRoutes } from './../../routes/DoctorViewRoutes'
+import { HeaderUser } from '../../modules/components/DoctorView/HeaderUser/HeaderUser'
+
+import { Footer, Main } from './styles/doctorView'
+
+import userAvatar from "../../assets/doctorView/avatar.png"
 
 
 
 export const DoctorView = () => {
-
   return (
-    <Switch>
-      <Redirect exact from="/doctor-view" to="/doctor-view/my-patients" />
-      <Route path="/doctor-view/my-patients" render={() => <MyPatients />} />
-      <Route path="/doctor-view/empty-patients" render={() => <EmptyPatients />} />
-    </Switch>
-
+    <Main>
+      <HeaderUser userName="Miranda Nelson" typeUser="Doctor" userAvatar={userAvatar} />
+      <DoctorViewRoutes />
+      <Footer />
+    </Main>
   )
 }
